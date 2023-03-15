@@ -6,22 +6,21 @@ import {
   } from "react-router-dom";
 
 import App from 'App'
-import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root />,
-      errorElement: <ErrorPage />,
-    },
+  /*
+  Este é um exemplo de como criar rotas, importante lembrar
+  de importar antes!
+  */
 
-    
   {
-    path: "contacts",
-    element: <Contact />,
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
   },
+
+
   ]);
 
 const container = document.getElementById('root') as HTMLDivElement
