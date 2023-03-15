@@ -17,5 +17,5 @@ Projeto base com Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCS
 
 ## Licença 
 
-MIT License.
+MIT License
 # template-portfolio
