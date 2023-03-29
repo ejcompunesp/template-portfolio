@@ -1,12 +1,5 @@
 import Avatar from 'components/Avatar'
 import Card from 'components/Card'
-import App from 
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
 
 function App() {
   return (
