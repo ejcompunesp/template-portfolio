@@ -2,9 +2,9 @@ type ButtonProps = {
   text: string
 }
 
-const Button = ({ text }: ButtonProps) => (
-        <button className="p-2 rounded-lg text-gray-100 bg-sky-500 hover:bg-sky-700">{text}</button>
+export const Button = ({ text }: ButtonProps) => (
+
+  <button type="button" className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 focus:ring-gray-900 bg-black hover:bg-gray-900">{text}</button>
   
 )
 
-export default Button
