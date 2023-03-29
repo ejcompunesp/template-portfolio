@@ -1,8 +1,11 @@
 import Avatar from 'components/Avatar'
 import Card from 'components/Card'
+import { Header } from 'components/Header'
 
 function App() {
   return (
+    <>
+    <Header />
     <div className="bg-red-100 min-h-screen items-center justify-center h-screen flex">
       <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex-row items-center space-x-4">
         <div>
@@ -17,10 +20,11 @@ function App() {
             title="Interest topic"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. LorIpsum.
             "
-          />
+            />
         </div>
       </div>
     </div>
+  </>
   )
 }
 
