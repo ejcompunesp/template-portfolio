@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import 'tailwindcss/tailwind.css'
+import { ChakraProvider } from '@chakra-ui/react'
 import {
     createBrowserRouter,
     RouterProvider,
@@ -27,7 +28,7 @@ const container = document.getElementById('root') as HTMLDivElement
 const root = createRoot(container)
 
 root.render(
-    <RouterProvider router={router} />
-
-
+  <ChakraProvider>
+      <RouterProvider router={router} />
+  </ChakraProvider>
 );
