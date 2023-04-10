@@ -1,12 +1,10 @@
-import { createRoot } from 'react-dom/client'
-import 'tailwindcss/tailwind.css'
-import { ChakraProvider } from '@chakra-ui/react'
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from "react-router-dom";
+import { extendTheme } from "@chakra-ui/react";
+import { createRoot } from "react-dom/client";
+import "tailwindcss/tailwind.css";
+import { ChakraProvider } from "@chakra-ui/react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from 'App'
+import App from "App";
 import ErrorPage from "./error-page";
 
 const router = createBrowserRouter([
@@ -20,15 +18,13 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
+]);
 
-
-  ]);
-
-const container = document.getElementById('root') as HTMLDivElement
-const root = createRoot(container)
+const container = document.getElementById("root") as HTMLDivElement;
+const root = createRoot(container);
 
 root.render(
   <ChakraProvider>
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </ChakraProvider>
 );
