@@ -1,17 +1,17 @@
 {
     "translation":{
-        "apresentacaoBranco":"Ola meu nome é",
-        "nomeApresentacao": "Lucas Perez",
-        "detalheApresentacao": "UI/UX",
-        "subTituloApresentacao": "Lorem Ipsum is simply dummy text of the printing and typesettin industry. LorIpsum.",
-        "botao01": "Hire Me",
-        "botao02": "Projetos",
+        "apresentation":"Ola meu nome é",
+        "nameApresentacao": "Lucas Perez",
+        "detailApresentacao": "UI/UX",
+        "subTitleApresentacao": "Lorem Ipsum is simply dummy text of the printing and typesettin industry. LorIpsum.",
+        "button01": "Hire Me",
+        "button02": "Projetos",
         "numGrid01": "+84",
-        "textGrod01": "Clients on work worldwide",
+        "textGrid01": "Clients on work worldwide",
         "numGrid02": "572",
-        "textGrod02": "Project Done",
+        "textGrid02": "Project Done",
         "numGrid03": "Contato",
-        "textGrod03": "helo@algumacoisa.com"
+        "textGrid03": "helo@algumacoisa.com"
     }
 
 

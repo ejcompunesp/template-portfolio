@@ -7,12 +7,8 @@ import './utils/i18n'
 function App() {
   return (
     <div>
-      <div>
         <Header/>
-      </div>
-      <div>
         <Main/>
-      </div>
     </div>
   );
 }

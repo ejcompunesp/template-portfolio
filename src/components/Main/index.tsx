@@ -9,7 +9,6 @@ import {
     Grid,
     GridItem
   } from '@chakra-ui/react'
-  
  import { ExternalLinkIcon } from '@chakra-ui/icons'
  import { useTranslation} from 'react-i18next';
   
@@ -25,29 +24,31 @@ import {
           spacing="8px"
           align='left'
         >
-          <Box position="relative"  >
+          <Box position="relative" >
             <Heading size={['md', '3xl'] }>
-             {t('tituloBranco')}<Badge variant="solid"  
+             {t('apresentation')}<Badge variant="solid"  
                          background="#3182CE" 
                          fontSize="20" 
                          py='8px' 
                          px='20px' 
-                         borderRadius='100px'>
-                {t("detalheApresentacao")}
-              </Badge><br/> {t("nomeApresentacao")}
+                         borderRadius='100px'
+                         >
+                          
+                {t("detailApresentacao")}
+              </Badge > {t("nameApresentacao")}
             </Heading>
           </Box>
           <Box>
             <Text>
-              {t("subTituloApresentacao")}
+              {t("subTitleApresentacao")}
             </Text>
           </Box>
           <Stack spacing={4} direction="row">
             <Button bgGradient='linear(to-l,gray.300, pink.200)' size="sm" borderRadius='0px'>
-            {t("botao01")}
+            {t("button01")}
             </Button>
             <a color='black' href=''>
-            {t("botao02")}
+            {t("button02")}
               <ExternalLinkIcon ml='5px'/>
             </a>
           </Stack>
@@ -64,7 +65,7 @@ import {
               {t("numGrid01")}
               </Heading>
               <Text fontSize={['xs','sm']}>
-              {t("textGrod01")}
+              {t("textGrid01")}
               </Text>
             </GridItem>
             <GridItem rowStart={2} rowEnd={3} colStart={1} colEnd={2} >
@@ -72,7 +73,7 @@ import {
               {t("numGrid02")}
               </Heading>
               <Text fontSize={['xs','sm']}>
-              {t("textGrod02")}
+              {t("textGrid02")}
               </Text>
             </GridItem>
             <GridItem rowStart={2} rowEnd={3} colStart={2} colEnd={4}>
@@ -80,7 +81,7 @@ import {
               {t("numGrid03")}
               </Heading>
               <Text fontSize={['xs','sm']}>
-              {t("textGrod03")}
+              {t("textGrid03")}
               </Text>
             </GridItem>
           </Grid>
