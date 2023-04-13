@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'sans' : ['League Spartan'],
+        'sans' : ['Space Grotesk'],
         'serif' : ['Sanchez', 'Playfair Display'],
       }
     }

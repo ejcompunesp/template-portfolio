@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "App";
 import ErrorPage from "./error-page";
+import './utils/i18n'
 
 const router = createBrowserRouter([
   /*

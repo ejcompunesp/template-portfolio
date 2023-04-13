@@ -11,8 +11,12 @@ import {
   } from '@chakra-ui/react'
   
  import { ExternalLinkIcon } from '@chakra-ui/icons'
+ import { useTranslation} from 'react-i18next';
   
   export const Main = () => {
+
+    const { t , i18n } = useTranslation()
+
     return (
       <Box bg="white" w="100%" h="100%" color="black" mt="130px">
         <VStack
@@ -23,28 +27,27 @@ import {
         >
           <Box position="relative"  >
             <Heading size={['md', '3xl'] }>
-              Hi! I Am <Badge variant="solid"  
+             {t('tituloBranco')}<Badge variant="solid"  
                          background="#3182CE" 
                          fontSize="20" 
                          py='8px' 
                          px='20px' 
                          borderRadius='100px'>
-                UI/UX
-              </Badge><br/> Lucas Perez
+                {t("detalheApresentacao")}
+              </Badge><br/> {t("nomeApresentacao")}
             </Heading>
           </Box>
           <Box>
             <Text>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. LorIpsum.
+              {t("subTituloApresentacao")}
             </Text>
           </Box>
           <Stack spacing={4} direction="row">
             <Button bgGradient='linear(to-l,gray.300, pink.200)' size="sm" borderRadius='0px'>
-              Hire Me
+            {t("botao01")}
             </Button>
             <a color='black' href=''>
-              Projects 
+            {t("botao02")}
               <ExternalLinkIcon ml='5px'/>
             </a>
           </Stack>
@@ -53,29 +56,31 @@ import {
             templateRows='repeat(2, 1fr)'
             templateColumns='repeat(3, 1fr)'
             gap={4}
+            
+            fontFamily={'Space Grotesk'}
           >
-            <GridItem rowStart={1} rowEnd={2} colStart={1} colEnd={2} mt='25px'>
-              <Heading size={['xs','md']} >
-                +84
+            <GridItem rowStart={1} rowEnd={2} colStart={1} colEnd={2} mt='25px' >
+              <Heading size={['xs','md']}  >
+              {t("numGrid01")}
               </Heading>
               <Text fontSize={['xs','sm']}>
-                Clients on work worldwide
+              {t("textGrod01")}
               </Text>
             </GridItem>
             <GridItem rowStart={2} rowEnd={3} colStart={1} colEnd={2} >
               <Heading size={['xs','md']} >
-                572
+              {t("numGrid02")}
               </Heading>
               <Text fontSize={['xs','sm']}>
-                Project done
+              {t("textGrod02")}
               </Text>
             </GridItem>
             <GridItem rowStart={2} rowEnd={3} colStart={2} colEnd={4}>
               <Heading size={['xs','md']} >
-                Contact
+              {t("numGrid03")}
               </Heading>
               <Text fontSize={['xs','sm']}>
-                exemple@algo.com
+              {t("textGrod03")}
               </Text>
             </GridItem>
           </Grid>
