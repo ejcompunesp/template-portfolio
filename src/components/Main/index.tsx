@@ -18,8 +18,8 @@ export const Main = () => {
   const { t, i18n } = useTranslation()
 
   return (
-    <Box bg="white" w="100%" h="100%" color="black" mt="130px" border={'2px'}>
-      <VStack border={'2px'}
+    <Box bg="white" w="100%" h="100%" color="black" mt="130px">
+      <VStack
         mx={['8%','10%']}
         my={['15px', '30px']}
         spacing="15px"
@@ -27,7 +27,7 @@ export const Main = () => {
       >
 
         {/* title component*/}
-        <Box position="relative" border={'2px'}>
+        <Box position="relative">
           <Heading size={['xl', '3xl']}>
             {t('apresentation')}
             <Badge variant="solid"
