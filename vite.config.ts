@@ -4,6 +4,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config https://vitest.dev/config
 export default defineConfig({
+  base: "/template-portfolio",
   plugins: [react(), tsconfigPaths()],
   server: {
     watch: {

@@ -5,8 +5,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "App";
-import ErrorPage from "./error-page";
-import './utils/i18n'
+import "./utils/i18n";
 
 const router = createBrowserRouter([
   /*
@@ -17,7 +16,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
   },
 ]);
 
