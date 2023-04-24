@@ -7,23 +7,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "App";
 import "./utils/i18n";
 
-const router = createBrowserRouter([
-  /*
-  Este é um exemplo de como criar rotas, importante lembrar
-  de importar antes!
-  */
-
-  {
-    path: "/",
-    element: <App />,
-  },
-]);
-
 const container = document.getElementById("root") as HTMLDivElement;
 const root = createRoot(container);
 
 root.render(
   <ChakraProvider>
-    <RouterProvider router={router} />
+    <App />
   </ChakraProvider>
 );
