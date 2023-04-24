@@ -1,15 +1,17 @@
-import Card from "components/Card";
-
-import { Alert, AlertIcon, AlertTitle, Box } from "@chakra-ui/react";
-import { Header, Main } from "components";
-import './utils/i18n'
+import { Box, Flex } from "@chakra-ui/react";
+import { Footer, Header, Main, Side } from "components";
+import "./utils/i18n";
 
 function App() {
   return (
-    <div>
-        <Header/>
-        <Main/>
-    </div>
+    <>
+      <Header />
+      <Flex h="100vh">
+        <Main />
+        <Side />
+      </Flex>
+      <Footer />
+    </>
   );
 }
 
