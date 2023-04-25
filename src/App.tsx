@@ -5,8 +5,8 @@ import "./utils/i18n";
 function App() {
   return (
     <>
-      <Header />
-      <Flex h="100vh">
+      <Header  />
+      <Flex h="100vh" overflowY="auto">
         <Main />
         <Side />
       </Flex>
